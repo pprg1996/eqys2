@@ -59,7 +59,7 @@ nav .nav-link:not(:last-child) {
 
 #hero-area {
   min-height: 110vh;
-  background-image: url("./assets/img/hero.png");
+  background-image: url("./assets/img/hero.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -271,7 +271,7 @@ nav .nav-link:not(:last-child) {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("./assets/img/montana.png");
+  background-image: url("./assets/img/montana.jpg");
   background-size: cover;
   background-position: center;
 }
