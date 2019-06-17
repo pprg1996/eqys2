@@ -11,6 +11,7 @@ h1 {
   font-family: "Raleway";
   line-height: 55px;
   color: #3b3d40;
+  font-weight: 800;
 }
 
 a {
@@ -101,12 +102,13 @@ nav .nav-link:not(:last-child) {
 }
 
 #quienes-somos {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 160px 0;
 }
 
 .quienes-somos-header {
@@ -117,7 +119,9 @@ nav .nav-link:not(:last-child) {
 .copy-container {
   display: flex;
   width: 800px;
-  justify-content: space-between;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
 }
 
 .quienes-somos-subtitulo {
@@ -127,6 +131,7 @@ nav .nav-link:not(:last-child) {
   text-align: center;
   line-height: 26px;
   margin-bottom: 70px;
+  font-weight: 500;
 }
 
 .copy-container p {
@@ -134,11 +139,151 @@ nav .nav-link:not(:last-child) {
   line-height: 20px;
   color: #656b6f;
   font-weight: 600;
-  width: 370px;
+  /* width: 370px; */
   margin: 0;
 }
 
-#liberar-experiencia {
+.copy-container p:first-child {
+  margin-bottom: 20px;
+}
+
+#arriendo-de-maquinarias {
+  background-color: #0f2a9d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 145px;
+  padding-bottom: 65px;
+}
+
+.maquina-header {
+  color: #ecedef;
+  margin-top: 0;
+}
+
+.maquina-subtitulo {
+  color: white;
+}
+
+.maquinas {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.maquina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.maquina:not(:last-child) {
+  margin-right: 70px;
+}
+
+.maquina-imagen {
+  margin-bottom: 50px;
+}
+
+.maquina-nombre {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 800;
+  color: #fafafa;
+}
+
+.maquina-nombre-1 {
+  margin-left: 35px;
+}
+
+.maquina-nombre-3 {
+  margin-right: 17px;
+}
+
+.maquina-nombre-4 {
+  margin-right: 60px;
+}
+
+#arriendo-de-maquinarias .boton {
+  margin-bottom: 70px;
+}
+
+.boton {
+  width: 290px;
+  height: 70px;
+  color: white;
+  background-color: #0042ff;
+  text-align: center;
+  /* align-self: flex-start; */
+  font-family: "Raleway";
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 15px 30px;
+  border-radius: 45px;
+}
+
+#soluciones {
+  background-color: #0f2a9d;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+.soluciones-header {
+  margin-top: 0;
+  margin-bottom: 130px;
+  color: white;
+}
+
+.soluciones-botones {
+  width: 730px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.soluciones-boton {
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  width: 340px;
+  height: 80px;
+  padding: 30px 0;
+  margin-bottom: 50px;
+  transition: all 0.2s linear;
+}
+
+.soluciones-boton:hover {
+  background-color: #0042ff;
+  color: white;
+}
+
+#especialistas {
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/img/montana.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.especialistas-header {
+  color: white;
+  margin: 0;
+  width: 500px;
+  text-align: center;
+}
+
+/* #liberar-experiencia {
   background-color: #f9f9f9;
   min-height: 100vh;
   display: flex;
@@ -180,8 +325,8 @@ nav .nav-link:not(:last-child) {
 }
 
 .boton-azul {
-  /* width: 190px; */
-  /* height: 45px; */
+  width: 190px;
+  height: 45px;
   color: white;
   background-color: #2e71f2;
   text-align: center;
@@ -203,4 +348,63 @@ nav .nav-link:not(:last-child) {
 
 .bloque-2 {
   width: 450px;
+} */
+
+#proximo-paso {
+  background-color: #f9f9f9; /*Borrar*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloque-3 {
+  max-width: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.proximo-paso-header {
+  margin: 15px 0;
+}
+
+.bloque-3 p {
+  margin-top: 0;
+}
+
+.feature-titulo {
+  color: #3b3d40;
+  font-weight: bold;
+  font-family: "Raleway";
+  letter-spacing: 0.1em;
+  font-size: 14px;
+}
+
+.feature-descripcion {
+  color: #656b6f;
+  font-family: "Lusitana";
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+.feature:not(:last-child) {
+  margin-right: 60px;
 }
