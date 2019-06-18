@@ -26,8 +26,8 @@ header {
   justify-content: center;
   align-items: center;
   font-family: "PT Sans";
-  background-color: #646c79;
-  display: none;
+  /* background-color: #646c79; */
+  /* display: none; */
 }
 
 .header-container {
