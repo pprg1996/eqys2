@@ -298,10 +298,10 @@ nav .nav-link:not(:last-child) {
 }
 
 .productos-container {
-  width: 700px;
+  width: 900px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin-bottom: 15px;
 }
@@ -312,6 +312,22 @@ nav .nav-link:not(:last-child) {
   justify-content: center;
   align-items: center;
   margin-bottom: 60px;
+}
+
+.producto:not(.no-margen) {
+  margin-right: 130px;
+}
+
+.producto-image {
+  margin-bottom: 30px;
+}
+
+.producto-nombre {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0;
+  color: #323232;
 }
 
 .break {
