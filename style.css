@@ -480,6 +480,10 @@ nav .nav-link:not(:last-child) {
   border-radius: 5px;
   background-color: rgb(99, 100, 102);
   padding-left: 15px;
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
 }
 
 .email-input::placeholder {
