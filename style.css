@@ -445,3 +445,55 @@ nav .nav-link:not(:last-child) {
 .feature:not(:last-child) {
   margin-right: 60px;
 }
+
+#unirse-al-programa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3b3d40;
+  padding: 100px 0;
+}
+
+.unirse-header {
+  color: white;
+  margin-top: 0;
+}
+
+#unirse-al-programa span {
+  color: white;
+  opacity: 0.7;
+  max-width: 360px;
+}
+
+.suscripcion-formulario {
+  width: 580px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email-input {
+  width: 400px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(99, 100, 102);
+  padding-left: 15px;
+}
+
+.email-input::placeholder {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  /* margin-left: 15px; */
+}
+
+.suscribirse-boton {
+  width: 160px;
+  height: 45px;
+  font-size: 12px;
+  background-color: #2e71f2;
+  letter-spacing: 0.2em;
+}
