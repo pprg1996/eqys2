@@ -80,7 +80,7 @@ nav .nav-link:not(:last-child) {
   width: 63px;
 }
 
-.logo-img {
+.logo {
   width: 100%;
 }
 
@@ -101,19 +101,22 @@ nav .nav-link:not(:last-child) {
   text-align: center;
 }
 
+/* Quienes somos-------------------------------------------------------- */
+
 #quienes-somos {
   /* min-height: 100vh; */
-  background-color: #f9f9f9;
+  background-color: #0042ff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 160px 0;
+  padding: 90px 0;
 }
 
 .quienes-somos-header {
-  margin-top: -33px;
-  margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 75px;
+  color: black;
 }
 
 .copy-container {
@@ -122,6 +125,7 @@ nav .nav-link:not(:last-child) {
   flex-direction: column;
   /* justify-content: space-between; */
   align-items: center;
+  margin-bottom: 75px;
 }
 
 .quienes-somos-subtitulo {
@@ -135,47 +139,58 @@ nav .nav-link:not(:last-child) {
 }
 
 .copy-container p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 20px;
-  color: #656b6f;
-  font-weight: 600;
+  color: black;
+  /* font-weight: 600; */
   /* width: 370px; */
   margin: 0;
+  font-family: "Raleway";
 }
 
 .copy-container p:first-child {
   margin-bottom: 20px;
 }
 
+.logo-circulo {
+}
+
+/* Arriendo de maquinaria --------------------------------------------- */
+
 #arriendo-de-maquinarias {
-  background-color: #0f2a9d;
+  background-color: #0042ff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 145px;
+  /* padding-top: 145px; */
+  padding-top: 0;
   padding-bottom: 65px;
 }
 
 .maquina-header {
   color: #ecedef;
   margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .maquina-subtitulo {
   color: white;
+  font-size: 16px;
+  font-family: "Raleway";
 }
 
 .maquinas {
   display: flex;
-  align-items: flex-end;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 100px;
+  height: 230px;
 }
 
 .maquina {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -183,15 +198,11 @@ nav .nav-link:not(:last-child) {
   margin-right: 70px;
 }
 
-.maquina-imagen {
-  margin-bottom: 50px;
-}
-
 .maquina-nombre {
   font-family: "Raleway";
   font-size: 14px;
   font-weight: 800;
-  color: #fafafa;
+  color: black;
 }
 
 .maquina-nombre-1 {
