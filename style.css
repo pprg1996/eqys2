@@ -182,9 +182,10 @@ nav .nav-link:not(:last-child) {
 .maquinas {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 100px;
-  height: 230px;
+  width: 800px;
+  height: 300px;
 }
 
 .maquina {
@@ -192,10 +193,24 @@ nav .nav-link:not(:last-child) {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 150px;
 }
 
-.maquina:not(:last-child) {
-  margin-right: 70px;
+.maquina-nombre-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 230px;
+  white-space: nowrap;
+}
+
+.maquina-nombre-img-1 {
+  margin-right: 33px;
+}
+
+.maquina-nombre-img-4 {
+  margin-left: 63px;
 }
 
 .maquina-nombre {
@@ -219,6 +234,18 @@ nav .nav-link:not(:last-child) {
 
 #arriendo-de-maquinarias .boton {
   margin-bottom: 70px;
+}
+
+.boton-pequeno {
+  /* width: 150px;
+  height: 35px; */
+  background-color: black;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 21px;
+  padding: 6px 26px;
+  border-radius: 20px;
 }
 
 .boton {
@@ -345,73 +372,6 @@ nav .nav-link:not(:last-child) {
   width: 100%;
   height: 0;
 }
-
-/* #liberar-experiencia {
-  background-color: #f9f9f9;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.experiencia-content {
-  width: 840px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.imagen-circular {
-  width: 300px;
-  height: 300px;
-  background-color: #656b6f;
-  border-radius: 1000px;
-  flex-shrink: 0;
-}
-
-.bloque {
-  display: flex;
-  flex-direction: column;
-  width: 420px;
-}
-
-.experiencia-copy {
-  font-family: "Lusitana";
-  color: #656b6f;
-  font-size: 20px;
-  line-height: 27px;
-  margin-bottom: 50px;
-}
-
-.experiencia-header {
-  margin: 0;
-}
-
-.boton-azul {
-  width: 190px;
-  height: 45px;
-  color: white;
-  background-color: #2e71f2;
-  text-align: center;
-  align-self: flex-start;
-  font-family: "Raleway";
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  padding: 15px 30px;
-  border-radius: 30px;
-}
-
-#invertir-en-futuro {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bloque-2 {
-  width: 450px;
-} */
 
 #proximo-paso {
   /* min-height: 100vh; */
