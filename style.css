@@ -190,10 +190,10 @@ nav .nav-link:not(:last-child) {
 .maquinas {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  /* margin: 0 -20px; */
   margin-bottom: 35px;
-  width: 800px;
-  min-height: 300px;
+  /* max-width: 800px; */
 }
 
 .maquina {
@@ -202,6 +202,15 @@ nav .nav-link:not(:last-child) {
   justify-content: space-between;
   align-items: center;
   width: 150px;
+  min-height: 300px;
+  margin: 0 25px;
+}
+
+.maquina-nombre {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 800;
+  color: black;
 }
 
 .maquina-nombre-img {
@@ -219,13 +228,6 @@ nav .nav-link:not(:last-child) {
 
 .maquina-nombre-img-4 {
   margin-left: 63px;
-}
-
-.maquina-nombre {
-  font-family: "Raleway";
-  font-size: 14px;
-  font-weight: 800;
-  color: black;
 }
 
 .maquina-nombre-1 {
@@ -550,10 +552,18 @@ footer {
   .hero-subtitulo {
     font-size: 16px;
   }
+
+  .maquinas {
+    width: 200px;
+  }
 }
 
 @media (max-width: 1000px) {
   .maquinas {
     max-width: 500px;
+  }
+
+  .maquina {
+    margin-bottom: 40px;
   }
 }
