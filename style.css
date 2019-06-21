@@ -366,7 +366,7 @@ nav .nav-link:not(:last-child) {
 
 /* Especialistas ------------------------------------------------------ */
 
-#especialistas {
+/* #especialistas {
   height: 120vh;
   display: flex;
   justify-content: center;
@@ -381,7 +381,7 @@ nav .nav-link:not(:last-child) {
   margin: 0;
   width: 500px;
   text-align: center;
-}
+} */
 
 /* Productos --------------------------------------------------------- */
 
@@ -421,10 +421,6 @@ nav .nav-link:not(:last-child) {
   margin-right: 130px;
 }
 
-.producto-image {
-  /* margin-bottom: 30px; */
-}
-
 .producto-nombre {
   font-family: "Raleway";
   font-size: 14px;
@@ -445,6 +441,7 @@ nav .nav-link:not(:last-child) {
   position: relative;
   background-color: #313131;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .outsourcing-content {
@@ -499,120 +496,20 @@ nav .nav-link:not(:last-child) {
   text-align: center;
 }
 
-/* Proximo paso ------------------------------------------------------ */
-
-#proximo-paso {
-  /* min-height: 100vh; */
+/* Montana ------------------------------------------------------------ */
+#montana {
+  background-image: url("./assets/img/montana_azul.png");
+  background-size: cover;
+  background-position: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 70px;
-  padding-bottom: 280px;
+  height: 76vh;
 }
 
-.bloque-3 {
-  max-width: 430px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.proximo-paso-header {
-  margin: 15px 0;
-}
-
-.bloque-3 p {
-  margin-top: 0;
-}
-
-.feature-titulo {
-  color: #3b3d40;
-  font-weight: bold;
-  font-family: "Raleway";
-  letter-spacing: 0.1em;
-  font-size: 14px;
-}
-
-.feature-descripcion {
-  color: #656b6f;
-  font-family: "Lusitana";
-  font-weight: 500;
-  font-size: 16px;
-  text-align: center;
-}
-
-.features {
-  display: flex;
-  justify-content: center;
-  align-self: stretch;
-}
-
-.feature {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-}
-
-.feature:not(:last-child) {
-  margin-right: 60px;
-}
-
-#unirse-al-programa {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #3b3d40;
-  padding: 100px 0;
-}
-
-.unirse-header {
+.montana-header {
+  font-family: "Montserrat";
+  font-size: 90px;
   color: white;
-  margin-top: 0;
-}
-
-#unirse-al-programa span {
-  color: white;
-  opacity: 0.7;
-  max-width: 360px;
-}
-
-.suscripcion-formulario {
-  width: 580px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.email-input {
-  width: 400px;
-  height: 45px;
-  border: none;
-  border-radius: 5px;
-  background-color: rgb(99, 100, 102);
-  padding-left: 15px;
-  font-family: "Raleway";
-  font-size: 14px;
-  font-weight: bold;
-  color: white;
-}
-
-.email-input::placeholder {
-  font-family: "Raleway";
-  font-size: 14px;
-  font-weight: bold;
-  color: white;
-  /* margin-left: 15px; */
-}
-
-.suscribirse-boton {
-  width: 160px;
-  height: 45px;
-  font-size: 12px;
-  background-color: #2e71f2;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.25em;
 }
