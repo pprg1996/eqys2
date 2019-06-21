@@ -26,9 +26,15 @@ header {
   justify-content: center;
   align-items: center;
   font-family: "PT Sans";
-  background-color: #0042ff;
+  /* background-color: #0042ff; */
   z-index: 3;
-  display: none;
+  /* display: none; */
+  transition: all 0.2s linear;
+}
+
+.header-show {
+  background-color: #0042ff;
+  height: 50px;
 }
 
 .header-container {
