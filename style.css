@@ -26,8 +26,9 @@ header {
   justify-content: center;
   align-items: center;
   font-family: "PT Sans";
-  /* background-color: #646c79; */
-  /* display: none; */
+  background-color: #0042ff;
+  z-index: 3;
+  display: none;
 }
 
 .header-container {
@@ -152,9 +153,6 @@ nav .nav-link:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.logo-circulo {
-}
-
 /* Arriendo de maquinaria --------------------------------------------- */
 
 #arriendo-de-maquinarias {
@@ -183,7 +181,7 @@ nav .nav-link:not(:last-child) {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 35px;
   width: 800px;
   height: 300px;
 }
@@ -263,21 +261,75 @@ nav .nav-link:not(:last-child) {
   border-radius: 45px;
 }
 
+.formulario {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.campos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.campos-lateral {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.etiqueta {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 15px;
+  margin-left: 22px;
+}
+
+.form-text-input {
+  max-width: 1000px;
+  border: none;
+  height: 40px;
+  border-radius: 1px;
+  border-radius: 22px;
+  margin-bottom: 15px;
+  padding: 0 25px;
+  border: 1px solid #f0f0f0;
+}
+
+.form-boton {
+  padding-left: 42px;
+  padding-right: 42px;
+}
+
+.curva {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+/* Soluciones ---------------------------------------------------------- */
+
 #soluciones {
-  background-color: #0f2a9d;
+  background-color: white;
   /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 150px;
+  padding-top: 140px;
+  /* padding-bottom: 150px; */
+  position: relative;
 }
 
 .soluciones-header {
   margin-top: 0;
   margin-bottom: 130px;
-  color: white;
+  color: black;
 }
 
 .soluciones-botones {
@@ -291,7 +343,7 @@ nav .nav-link:not(:last-child) {
 .soluciones-boton {
   font-size: 16px;
   color: black;
-  background-color: white;
+  background-color: #e9e9e9;
   width: 340px;
   height: 80px;
   padding: 30px 0;
@@ -303,6 +355,16 @@ nav .nav-link:not(:last-child) {
   background-color: #0042ff;
   color: white;
 }
+
+.etiqueta-negra {
+  color: black;
+}
+
+.form-boton-azul {
+  background-color: #0042ff;
+}
+
+/* Especialistas ------------------------------------------------------ */
 
 #especialistas {
   height: 120vh;
@@ -321,6 +383,8 @@ nav .nav-link:not(:last-child) {
   text-align: center;
 }
 
+/* Productos --------------------------------------------------------- */
+
 #productos {
   display: flex;
   flex-direction: column;
@@ -333,6 +397,7 @@ nav .nav-link:not(:last-child) {
 .productos-header {
   margin-top: 0;
   margin-bottom: 90px;
+  color: #2f2e2e;
 }
 
 .productos-container {
@@ -357,7 +422,7 @@ nav .nav-link:not(:last-child) {
 }
 
 .producto-image {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .producto-nombre {
@@ -366,12 +431,75 @@ nav .nav-link:not(:last-child) {
   font-weight: 800;
   letter-spacing: 0;
   color: #323232;
+  margin-bottom: 30px;
 }
 
 .break {
   width: 100%;
   height: 0;
 }
+
+/* Outsourcing ------------------------------------------------------- */
+
+#outsourcing {
+  position: relative;
+  background-color: #313131;
+  padding-top: 100px;
+}
+
+.outsourcing-content {
+  max-width: 760px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.outsourcing-header {
+  color: white;
+  margin-bottom: 70px;
+}
+
+.outsourcing-botones {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.outsourcing-boton {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.formulario-2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  /* min-width: 620px; */
+}
+
+.campos-lateral-2 {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+  min-width: 300px;
+  /* justify-content: center; */
+}
+
+.form-cantidad {
+  margin-bottom: 45px;
+}
+
+.boton-outsourcing {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Proximo paso ------------------------------------------------------ */
 
 #proximo-paso {
   /* min-height: 100vh; */
