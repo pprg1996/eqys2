@@ -6,6 +6,10 @@ body {
   margin: 0;
 }
 
+input:focus {
+  outline: none;
+}
+
 h1 {
   font-size: 52px;
   font-family: "Raleway";
@@ -46,14 +50,39 @@ header {
   width: 1000px;
 }
 
+.nombre-empresa-link {
+  margin-right: 150px;
+}
+
 .nombre-empresa {
   font-size: 16px;
   color: white;
   letter-spacing: 0.2em;
 }
 
-nav .nav-link:not(:last-child) {
+.burger-container {
+  width: 32px;
+  display: none;
+}
+
+.burger-image {
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  max-width: 800px;
+  justify-content: space-between;
+  flex-grow: 1;
+  transition: all 0.2s linear;
+}
+
+/* nav .nav-link:not(:last-child) {
   margin-right: 16px;
+} */
+
+.nav-link {
+  margin: 0 8px;
 }
 
 .nav-link {
@@ -637,5 +666,40 @@ footer {
 @media (max-width: 430px) {
   .montana-header {
     font-size: 70px;
+  }
+}
+
+/* Header --------------------- */
+
+@media (max-width: 1000px) {
+  .burger-container {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    background-color: #0042ff;
+    flex-direction: column;
+    top: 0;
+    right: -800px;
+    align-items: center;
+    padding: 50px 15px;
+    height: 90vh;
+  }
+
+  .show-menu {
+    right: 0;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .nav-link {
+    margin-bottom: 15px;
+    font-size: 16px;
   }
 }
