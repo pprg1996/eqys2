@@ -509,15 +509,16 @@ nav .nav-link:not(:last-child) {
 
 footer {
   background-color: #3b3d40;
-  padding: 45px 0px;
+  padding: 45px 15px;
 }
 
 .footer-content {
   max-width: 1150px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .info-container {
@@ -530,6 +531,7 @@ footer {
   font-family: "Raleway";
   color: white;
   opacity: 0.3;
+  text-align: center;
 }
 
 .info:nth-child(2) {
@@ -548,11 +550,7 @@ footer {
 
 /* Responsive --------------------------------------------------------- */
 
-@media (max-width: 430px) {
-  .formulario {
-    width: 320px;
-  }
-}
+/* Varios---------------------------- */
 
 @media (max-width: 600px) {
   h1 {
@@ -569,6 +567,8 @@ footer {
   }
 }
 
+/* Soluciones------------------------ */
+
 @media (max-width: 359px) {
   .soluciones-botones {
     width: 300px;
@@ -578,6 +578,14 @@ footer {
 @media (min-width: 360px) and (max-width: 776px) {
   .soluciones-botones {
     width: 380px;
+  }
+}
+
+/* Formulario ------------------------ */
+
+@media (max-width: 430px) {
+  .formulario {
+    width: 320px;
   }
 }
 
@@ -593,6 +601,8 @@ footer {
   }
 }
 
+/* Maquinas ---------------------------- */
+
 @media (max-width: 1000px) {
   .maquinas {
     max-width: 500px;
@@ -600,5 +610,23 @@ footer {
 
   .maquina {
     margin-bottom: 40px;
+  }
+}
+
+/* Footer-------------- */
+
+@media (max-width: 600px) {
+  .info-container {
+    width: 100%;
+    align-items: center;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .social-copyright {
+    width: 100%;
+    align-items: center;
+    margin-top: 50px;
   }
 }
