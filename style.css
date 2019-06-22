@@ -77,6 +77,10 @@ header {
   transition: all 0.2s linear;
 }
 
+.cerrar-link {
+  display: none;
+}
+
 /* nav .nav-link:not(:last-child) {
   margin-right: 16px;
 } */
@@ -427,7 +431,7 @@ header {
 }
 
 .productos-container {
-  width: 900px;
+  max-width: 1000px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -438,14 +442,16 @@ header {
 .producto {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin: 0 83px;
   margin-bottom: 60px;
+  height: 195px;
 }
 
-.producto:not(.no-margen) {
+/* .producto:not(.no-margen) {
   margin-right: 130px;
-}
+} */
 
 .producto-nombre {
   font-family: "Raleway";
@@ -453,7 +459,7 @@ header {
   font-weight: 800;
   letter-spacing: 0;
   color: #323232;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 /* Outsourcing ------------------------------------------------------- */
@@ -685,6 +691,10 @@ footer {
     align-items: center;
     padding: 50px 15px;
     height: 90vh;
+  }
+
+  .cerrar-link {
+    display: initial;
   }
 
   .show-menu {
