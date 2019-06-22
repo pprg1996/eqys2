@@ -630,3 +630,11 @@ footer {
     margin-top: 50px;
   }
 }
+
+/* Montana -------------------- */
+
+@media (max-width: 430px) {
+  .montana-header {
+    font-size: 70px;
+  }
+}
