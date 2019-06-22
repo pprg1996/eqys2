@@ -29,8 +29,9 @@ header {
   font-family: "PT Sans";
   /* background-color: #0042ff; */
   z-index: 3;
-  display: none;
+  /* display: none; */
   transition: all 0.2s linear;
+  padding: 0 40px;
 }
 
 .header-show {
