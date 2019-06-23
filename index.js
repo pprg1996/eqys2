@@ -78,3 +78,35 @@ botonesOutsourcing.forEach(boton => {
     scrollTo(0, form.offsetTop + document.querySelector("#outsourcing").offsetTop - 120);
   });
 });
+
+const quienesNav = document.querySelector(".quienes-nav");
+
+quienesNav.addEventListener("click", event => {
+  event.preventDefault();
+
+  scrollTo(0, document.querySelector("#quienes-somos").offsetTop);
+});
+
+const arriendoNav = document.querySelector(".arriendo-nav");
+
+arriendoNav.addEventListener("click", event => {
+  event.preventDefault();
+
+  scrollTo(0, document.querySelector("#arriendo-de-maquinarias").offsetTop - 100);
+});
+
+const solucionesNav = document.querySelector(".soluciones-nav");
+
+solucionesNav.addEventListener("click", event => {
+  event.preventDefault();
+
+  scrollTo(0, document.querySelector("#soluciones").offsetTop);
+});
+
+const productosNav = document.querySelector(".productos-nav");
+
+productosNav.addEventListener("click", event => {
+  event.preventDefault();
+
+  scrollTo(0, document.querySelector("#productos").offsetTop - 100);
+});
