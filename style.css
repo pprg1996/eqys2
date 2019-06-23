@@ -290,6 +290,12 @@ header {
   font-size: 21px;
   padding: 6px 26px;
   border-radius: 20px;
+  transition: all 0.2s linear;
+}
+
+.boton-pequeno:hover {
+  background-color: #cccccc;
+  color: black;
 }
 
 .boton {
