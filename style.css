@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
@@ -510,6 +514,11 @@ header {
   align-items: center;
   flex-wrap: wrap;
   /* min-width: 620px; */
+}
+
+.form-esconder {
+  height: 0;
+  display: none;
 }
 
 .campos-lateral-2 {

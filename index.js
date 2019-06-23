@@ -22,3 +22,59 @@ cerrar.addEventListener("click", event => {
 
   menu.classList.remove("show-menu");
 });
+
+const botonesMaquina = document.querySelectorAll(".boton-maquina");
+
+botonesMaquina.forEach(boton => {
+  boton.addEventListener("click", event => {
+    event.preventDefault();
+
+    let form = document.querySelector(".formulario-maquinas");
+    form.classList.remove("form-esconder");
+
+    // form.scrollIntoView(false);
+    scrollTo(0, form.offsetTop - 120);
+  });
+});
+
+const botonesSoluciones = document.querySelectorAll(".boton-soluciones");
+
+botonesSoluciones.forEach(boton => {
+  boton.addEventListener("click", event => {
+    event.preventDefault();
+
+    let form = document.querySelector(".formulario-soluciones");
+    form.classList.remove("form-esconder");
+
+    // form.scrollIntoView(false);
+    scrollTo(0, form.offsetTop + document.querySelector("#soluciones").offsetTop - 120);
+  });
+});
+
+const botonesProductos = document.querySelectorAll(".boton-producto");
+
+botonesProductos.forEach(boton => {
+  boton.addEventListener("click", event => {
+    event.preventDefault();
+
+    let form = document.querySelector(".formulario-productos");
+    form.classList.remove("form-esconder");
+
+    // form.scrollIntoView(false);
+    scrollTo(0, form.offsetTop - 120);
+  });
+});
+
+const botonesOutsourcing = document.querySelectorAll(".outsourcing-boton");
+
+botonesOutsourcing.forEach(boton => {
+  boton.addEventListener("click", event => {
+    event.preventDefault();
+
+    let form = document.querySelector(".formulario-outsourcing");
+    form.classList.remove("form-esconder");
+
+    // form.scrollIntoView(false);
+    scrollTo(0, form.offsetTop + document.querySelector("#outsourcing").offsetTop - 120);
+  });
+});
