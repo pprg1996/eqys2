@@ -101,7 +101,7 @@
 
     <form class="formulario formulario-maquinas form-esconder">
 
-      <span class="consultar-maquina">Consultar Elevadores de Tijera</span>
+      <span class="consultar-subheader consultar-maquina">Consultar Elevadores de Tijera</span>
 
       <div class="campos">
         <div class="campos-lateral">
@@ -133,32 +133,42 @@
     <img class="curva" src="./assets/img/curva.png" alt="curva">
     <h1 class="soluciones-header">Soluciones</h1>
     <div class="soluciones-botones">
-      <a href="#" class="boton soluciones-boton boton-soluciones">Mantenimiento de Flota</a>
-      <a href="#" class="boton soluciones-boton boton-soluciones">Equipamiento Minero de Flota</a>
-      <a href="#" class="boton soluciones-boton boton-soluciones">Venta de Flota</a>
-      <a href="#" class="boton soluciones-boton boton-soluciones">Equipamiento de Flota</a>
+      <a href="#" class="boton soluciones-boton boton-soluciones" data-solucion="Mantenimiento de Flota">Mantenimiento
+        de Flota</a>
+      <a href="#" class="boton soluciones-boton boton-soluciones"
+        data-solucion="Equipamiento Minero de Flota">Equipamiento Minero de Flota</a>
+      <a href="#" class="boton soluciones-boton boton-soluciones" data-solucion="Venta de Flota">Venta de Flota</a>
+      <a href="#" class="boton soluciones-boton boton-soluciones" data-solucion="Equipamiento de Flota">Equipamiento de
+        Flota</a>
     </div>
 
     <form class="formulario formulario-soluciones form-esconder">
+
+      <span class="consultar-subheader consultar-solucion">Consultar Mantenimiento de Flota</span>
+
       <div class="campos">
         <div class="campos-lateral">
-          <span class="etiqueta etiqueta-negra">Marca</span>
-          <input class="form-text-input" type="text" name="marca">
-          <span class="etiqueta etiqueta-negra">Año</span>
-          <input class="form-text-input" type="text" name="año">
-          <span class="etiqueta etiqueta-negra">Flota Mixta</span>
-          <input class="form-text-input" type="text" name="flota">
-        </div>
-        <div class="campos-lateral">
-          <span class="etiqueta etiqueta-negra">Modelo</span>
-          <input class="form-text-input" type="text" name="modelo">
-          <span class="etiqueta etiqueta-negra">Cantidad</span>
-          <input class="form-text-input" type="text" name="cantidad">
+          <span class="etiqueta etiqueta-negra">Nombre</span>
+          <input class="form-text-input" type="text" name="nombre">
+          <span class="etiqueta etiqueta-negra">Apellido</span>
+          <input class="form-text-input" type="text" name="apellido">
           <span class="etiqueta etiqueta-negra">Correo Electronico</span>
           <input class="form-text-input" type="text" name="correo">
         </div>
+        <div class="campos-lateral">
+          <span class="etiqueta etiqueta-negra">Marca</span>
+          <input class="form-text-input" type="text" name="marca">
+          <span class="etiqueta etiqueta-negra">Modelo</span>
+          <input class="form-text-input" type="text" name="modelo">
+          <span class="etiqueta etiqueta-negra">Año</span>
+          <input class="form-text-input" type="text" name="year">
+          <span class="etiqueta etiqueta-negra">Cantidad</span>
+          <input class="form-text-input" type="text" name="cantidad">
+          <span class="etiqueta etiqueta-negra">Flota Mixta</span>
+          <input class="form-text-input" type="text" name="flota">
+        </div>
       </div>
-      <a href="#" class="boton-pequeno form-boton form-boton-azul ">Enviar</a>
+      <a href="#" class="boton-pequeno form-boton form-boton-azul form-soluciones-enviar">Enviar</a>
     </form>
   </section>
 
@@ -168,49 +178,54 @@
       <div class="producto">
         <span class="producto-nombre">Barras Antivuelco</span>
         <img class="producto-image" src="./assets/img/barra_antivuelco_2.png" alt="Barra">
-        <a href="#" class="boton-pequeno boton-producto">Consultar</a>
+        <a href="#" class="boton-pequeno boton-producto" data-producto="Barras Antivuelco">Consultar</a>
       </div>
       <div class="producto">
         <span class="producto-nombre">Neumaticos</span>
         <img class="producto-image" src="./assets/img/neumatico_2.png" alt="Neumatico">
-        <a href="#" class="boton-pequeno boton-producto">Consultar</a>
+        <a href="#" class="boton-pequeno boton-producto" data-producto="Neumaticos">Consultar</a>
       </div>
       <div class="producto no-margen">
         <span class="producto-nombre">Laminas de Seguridad</span>
         <img class="producto-image" src="./assets/img/lamina_seguridad_2.png" alt="Lamina">
-        <a href="#" class="boton-pequeno boton-producto">Consultar</a>
+        <a href="#" class="boton-pequeno boton-producto" data-producto="Laminas de Seguridad">Consultar</a>
       </div>
       <div class="producto">
         <span class="producto-nombre">Accesorios</span>
         <img class="producto-image" src="./assets/img/accesorio_2.png" alt="Accesorio">
-        <a href="#" class="boton-pequeno boton-producto">Consultar</a>
+        <a href="#" class="boton-pequeno boton-producto" data-producto="Accesorios">Consultar</a>
       </div>
       <div class="producto no-margen">
         <span class="producto-nombre">Alarmas</span>
         <img class="producto-image" src="./assets/img/alarma_2.png" alt="Alarma">
-        <a href="#" class="boton-pequeno boton-producto">Consultar</a>
+        <a href="#" class="boton-pequeno boton-producto" data-producto="Alarmas">Consultar</a>
       </div>
     </div>
     <form class="formulario formulario-productos form-esconder">
+      <span class="consultar-subheader consultar-solucion consultar-producto">Consultar Barras Antivuelco</span>
       <div class="campos">
         <div class="campos-lateral">
-          <span class="etiqueta etiqueta-negra">Marca</span>
-          <input class="form-text-input" type="text" name="marca">
-          <span class="etiqueta etiqueta-negra">Año</span>
-          <input class="form-text-input" type="text" name="año">
-          <span class="etiqueta etiqueta-negra">Flota Mixta</span>
-          <input class="form-text-input" type="text" name="flota">
-        </div>
-        <div class="campos-lateral">
-          <span class="etiqueta etiqueta-negra">Modelo</span>
-          <input class="form-text-input" type="text" name="modelo">
-          <span class="etiqueta etiqueta-negra">Cantidad</span>
-          <input class="form-text-input" type="text" name="cantidad">
+          <span class="etiqueta etiqueta-negra">Nombre</span>
+          <input class="form-text-input" type="text" name="nombre">
+          <span class="etiqueta etiqueta-negra">Apellido</span>
+          <input class="form-text-input" type="text" name="apellido">
           <span class="etiqueta etiqueta-negra">Correo Electronico</span>
           <input class="form-text-input" type="text" name="correo">
         </div>
+        <div class="campos-lateral">
+          <span class="etiqueta etiqueta-negra">Marca</span>
+          <input class="form-text-input" type="text" name="marca">
+          <span class="etiqueta etiqueta-negra">Modelo</span>
+          <input class="form-text-input" type="text" name="modelo">
+          <span class="etiqueta etiqueta-negra">Año</span>
+          <input class="form-text-input" type="text" name="year">
+          <span class="etiqueta etiqueta-negra">Cantidad</span>
+          <input class="form-text-input" type="text" name="cantidad">
+          <span class="etiqueta etiqueta-negra">Flota Mixta</span>
+          <input class="form-text-input" type="text" name="flota">
+        </div>
       </div>
-      <a href="#" class="boton-pequeno form-boton form-boton-azul ">Enviar</a>
+      <a href="#" class="boton-pequeno form-boton form-boton-azul form-productos-enviar">Enviar</a>
     </form>
   </section>
 
