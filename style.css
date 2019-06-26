@@ -324,6 +324,15 @@ header {
   align-items: center;
 }
 
+.consultar-maquina {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: white;
+}
+
 .campos {
   width: 100%;
   display: flex;

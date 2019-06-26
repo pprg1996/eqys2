@@ -1,3 +1,5 @@
+// Poner y quitar fondo al header al hacer scroll
+
 const onScroll = () => {
   if (pageYOffset > 0) header.classList.add("header-show");
   else header.classList.remove("header-show");
@@ -6,6 +8,8 @@ const onScroll = () => {
 const header = document.querySelector("header");
 addEventListener("scroll", onScroll);
 // addEventListener("touchmove", onScroll);
+
+// Mostrar y esconder menu en movil
 
 const burger = document.querySelector(".burger-link");
 const menu = document.querySelector(".menu");
@@ -23,11 +27,19 @@ cerrar.addEventListener("click", event => {
   menu.classList.remove("show-menu");
 });
 
+// Scroll a formularios
+
 const botonesMaquina = document.querySelectorAll(".boton-maquina");
+
+let tipoConsultaMaquina = "";
 
 botonesMaquina.forEach(boton => {
   boton.addEventListener("click", event => {
     event.preventDefault();
+
+    tipoConsultaMaquina = boton.getAttribute("data-maquina");
+
+    document.querySelector(".consultar-maquina").textContent = `Consultar ${tipoConsultaMaquina}`;
 
     let form = document.querySelector(".formulario-maquinas");
     form.classList.remove("form-esconder");
@@ -79,6 +91,8 @@ botonesOutsourcing.forEach(boton => {
   });
 });
 
+// Navegacion ------------------------------------------------
+
 const quienesNav = document.querySelector(".quienes-nav");
 
 quienesNav.addEventListener("click", event => {
@@ -111,7 +125,7 @@ productosNav.addEventListener("click", event => {
   scrollTo(0, document.querySelector("#productos").offsetTop - 100);
 });
 
-// Enviar formulario -----------------------------------
+// Enviar formulario maquinarias -----------------------------------
 
 const maquinariaEnviarBoton = document.querySelector(".form-maquinaria-enviar");
 
@@ -135,7 +149,7 @@ const enviar = event => {
   let flota = document.querySelector(".formulario-maquinas input[name='flota']").value;
 
   let data = new FormData();
-  data.append("asunto", "Nueva Consulta");
+  data.append("asunto", tipoConsultaMaquina);
   data.append("nombre", nombre);
   data.append("apellido", apellido);
   data.append("correo", correo);
