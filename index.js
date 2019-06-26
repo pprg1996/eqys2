@@ -110,3 +110,47 @@ productosNav.addEventListener("click", event => {
   menu.classList.remove("show-menu");
   scrollTo(0, document.querySelector("#productos").offsetTop - 100);
 });
+
+// Enviar formulario -----------------------------------
+
+const maquinariaEnviarBoton = document.querySelector(".form-maquinaria-enviar");
+
+const enviar = event => {
+  event.preventDefault();
+
+  let nombre = document.querySelector(".formulario-maquinas input[name='nombre']").value;
+
+  let apellido = document.querySelector(".formulario-maquinas input[name='apellido']").value;
+
+  let correo = document.querySelector(".formulario-maquinas input[name='correo']").value;
+
+  let year = document.querySelector(".formulario-maquinas input[name='year']").value;
+
+  let marca = document.querySelector(".formulario-maquinas input[name='marca']").value;
+
+  let modelo = document.querySelector(".formulario-maquinas input[name='modelo']").value;
+
+  let cantidad = document.querySelector(".formulario-maquinas input[name='cantidad']").value;
+
+  let flota = document.querySelector(".formulario-maquinas input[name='flota']").value;
+
+  let data = new FormData();
+  data.append("asunto", "Nueva Consulta");
+  data.append("nombre", nombre);
+  data.append("apellido", apellido);
+  data.append("correo", correo);
+  data.append("marca", marca);
+  data.append("year", year);
+  data.append("modelo", modelo);
+  data.append("cantidad", cantidad);
+  data.append("flota", flota);
+
+  fetch("http://eqys.cl/dev/correo.php", {
+    method: "POST",
+    body: data
+  });
+
+  alert("Gracias! Pronto nos comunicaremos con usted.");
+};
+
+maquinariaEnviarBoton.addEventListener("click", enviar);
