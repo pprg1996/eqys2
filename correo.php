@@ -16,5 +16,5 @@ if ($tecnico=="") {
   $mensaje="Nombre: {$nombre}\r\n\r\nApellido: {$apellido}\r\n\r\nCorreo: {$correo}\r\n\r\nTipo de tecnico: {$tecnico}\r\n\r\nCantidad: {$cantidad}\r\n\r\n";
 }
 
-mail("pprg1996@gmail.com","Consultar {$_POST["asunto"]}",$mensaje);
+mail("ventas@eqys.cl","Consultar {$_POST["asunto"]}",$mensaje);
 ?>

@@ -179,7 +179,7 @@ const enviarFormularioMaquinariaHandler = event => {
   data.append("cantidad", cantidad);
   data.append("flota", flota);
 
-  fetch("http://eqys.cl/dev/correo.php", {
+  fetch("./correo.php", {
     method: "POST",
     body: data
   });
@@ -223,7 +223,7 @@ const enviarFormularioSolucionesHandler = event => {
   data.append("cantidad", cantidad);
   data.append("flota", flota);
 
-  fetch("http://eqys.cl/dev/correo.php", {
+  fetch("./correo.php", {
     method: "POST",
     body: data
   });
@@ -267,7 +267,7 @@ const enviarFormularioProductosHandler = event => {
   data.append("cantidad", cantidad);
   data.append("flota", flota);
 
-  fetch("http://eqys.cl/dev/correo.php", {
+  fetch("./correo.php", {
     method: "POST",
     body: data
   });
@@ -302,7 +302,7 @@ const enviarFormularioOutsourcingHandler = event => {
   data.append("tecnico", tecnico);
   data.append("cantidad", cantidad);
 
-  fetch("http://eqys.cl/dev/correo.php", {
+  fetch("./correo.php", {
     method: "POST",
     body: data
   });
