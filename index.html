@@ -148,11 +148,11 @@
 
       <div class="campos">
         <div class="campos-lateral">
-          <span class="etiqueta etiqueta-negra">Nombre</span>
+          <span class="etiqueta etiqueta-negra">Tu Nombre</span>
           <input class="form-text-input" type="text" name="nombre">
-          <span class="etiqueta etiqueta-negra">Apellido</span>
+          <span class="etiqueta etiqueta-negra">Tu Apellido</span>
           <input class="form-text-input" type="text" name="apellido">
-          <span class="etiqueta etiqueta-negra">Correo Electronico</span>
+          <span class="etiqueta etiqueta-negra">Tu Correo Electronico</span>
           <input class="form-text-input" type="text" name="correo">
         </div>
         <div class="campos-lateral">
@@ -205,11 +205,11 @@
       <span class="consultar-subheader consultar-solucion consultar-producto">Consultar Barras Antivuelco</span>
       <div class="campos">
         <div class="campos-lateral">
-          <span class="etiqueta etiqueta-negra">Nombre</span>
+          <span class="etiqueta etiqueta-negra">Tu Nombre</span>
           <input class="form-text-input" type="text" name="nombre">
-          <span class="etiqueta etiqueta-negra">Apellido</span>
+          <span class="etiqueta etiqueta-negra">Tu Apellido</span>
           <input class="form-text-input" type="text" name="apellido">
-          <span class="etiqueta etiqueta-negra">Correo Electronico</span>
+          <span class="etiqueta etiqueta-negra">Tu Correo Electronico</span>
           <input class="form-text-input" type="text" name="correo">
         </div>
         <div class="campos-lateral">
@@ -235,22 +235,31 @@
       <h1 class="outsourcing-header">Outsourcing</h1>
 
       <div class="outsourcing-botones">
-        <a href="#" class="boton soluciones-boton outsourcing-boton">Tecnicos en Maquinaria Pesada</a>
-        <a href="#" class="boton soluciones-boton outsourcing-boton">Tecnicos en Vehiculos</a>
-        <a href="#" class="boton soluciones-boton outsourcing-boton">Aseo en Industrial</a>
+        <a href="#" class="boton soluciones-boton outsourcing-boton"
+          data-outsourcing="Tecnicos en Maquinaria Pesada">Tecnicos en Maquinaria Pesada</a>
+        <a href="#" class="boton soluciones-boton outsourcing-boton" data-outsourcing="Tecnicos en Vehiculos">Tecnicos
+          en Vehiculos</a>
+        <a href="#" class="boton soluciones-boton outsourcing-boton" data-outsourcing="Aseo en Industrial">Aseo en
+          Industrial</a>
       </div>
 
       <form class="formulario-2 formulario-outsourcing form-esconder">
+        <span class="consultar-subheader consultar-outsourcing">Consultar Tecnicos en Maquinaria Pesada</span>
         <div class="campos-lateral-2">
-          <span class="etiqueta">Tipo de tecnico</span>
-          <input class="form-text-input" type="text" name="tecnico">
-          <span class="etiqueta">Correo Electronico</span>
+          <span class="etiqueta">Tu Nombre</span>
+          <input class="form-text-input" type="text" name="nombre">
+          <span class="etiqueta">Tu Apellido</span>
+          <input class="form-text-input" type="text" name="apellido">
+          <span class="etiqueta">Tu Correo Electronico</span>
           <input class="form-text-input" type="text" name="correo">
         </div>
         <div class="campos-lateral-2">
+          <span class="etiqueta">Tipo de tecnico</span>
+          <input class="form-text-input" type="text" name="tecnico">
           <span class="etiqueta">Cantidad</span>
           <input class="form-text-input form-cantidad" type="text" name="cantidad">
-          <a href="#" class="boton-pequeno form-boton form-boton-azul boton-outsourcing">Enviar</a>
+          <a href="#"
+            class="boton-pequeno form-boton form-boton-azul boton-outsourcing form-outsourcing-enviar">Enviar</a>
         </div>
       </form>
     </div>

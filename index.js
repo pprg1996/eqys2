@@ -91,9 +91,17 @@ botonesProductos.forEach(boton => {
 
 const botonesOutsourcing = document.querySelectorAll(".outsourcing-boton");
 
+let tipoConsultaOutsourcing = "";
+
 botonesOutsourcing.forEach(boton => {
   boton.addEventListener("click", event => {
     event.preventDefault();
+
+    tipoConsultaOutsourcing = boton.getAttribute("data-outsourcing");
+
+    document.querySelector(".formulario-outsourcing input[name='tecnico']").value = tipoConsultaOutsourcing;
+
+    document.querySelector(".consultar-outsourcing").textContent = `Consultar ${tipoConsultaOutsourcing}`;
 
     let form = document.querySelector(".formulario-outsourcing");
     form.classList.remove("form-esconder");
@@ -268,3 +276,38 @@ const enviarFormularioProductosHandler = event => {
 };
 
 productosEnviarBoton.addEventListener("click", enviarFormularioProductosHandler);
+
+// Enviar formulario outsourcing ---------------------------------------
+
+const outsourcingEnviarBoton = document.querySelector(".form-outsourcing-enviar");
+
+const enviarFormularioOutsourcingHandler = event => {
+  event.preventDefault();
+
+  let nombre = document.querySelector(".formulario-outsourcing input[name='nombre']").value;
+
+  let apellido = document.querySelector(".formulario-outsourcing input[name='apellido']").value;
+
+  let correo = document.querySelector(".formulario-outsourcing input[name='correo']").value;
+
+  let tecnico = document.querySelector(".formulario-outsourcing input[name='tecnico']").value;
+
+  let cantidad = document.querySelector(".formulario-outsourcing input[name='cantidad']").value;
+
+  let data = new FormData();
+  data.append("asunto", tipoConsultaOutsourcing);
+  data.append("nombre", nombre);
+  data.append("apellido", apellido);
+  data.append("correo", correo);
+  data.append("tecnico", tecnico);
+  data.append("cantidad", cantidad);
+
+  fetch("http://eqys.cl/dev/correo.php", {
+    method: "POST",
+    body: data
+  });
+
+  alert("Gracias! Pronto nos comunicaremos con usted.");
+};
+
+outsourcingEnviarBoton.addEventListener("click", enviarFormularioOutsourcingHandler);
