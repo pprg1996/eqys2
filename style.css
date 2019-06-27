@@ -54,6 +54,14 @@ header {
   width: 1000px;
 }
 
+.logo-header-container {
+  width: 60px;
+}
+
+.logo-header {
+  width: 100%;
+}
+
 .nombre-empresa-link {
   margin-right: 150px;
 }
@@ -99,9 +107,9 @@ header {
   font-size: 12px;
 }
 
-.social-link:not(:last-child) {
+/* .social-link:not(:last-child) {
   margin-right: 26px;
-}
+} */
 
 /* Hero-------------------------------------------- */
 
