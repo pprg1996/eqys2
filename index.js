@@ -113,20 +113,20 @@ botonesOutsourcing.forEach(boton => {
 
 // Navegacion ------------------------------------------------
 
-const quienesNav = document.querySelector(".quienes-nav");
+// const quienesNav = document.querySelector(".quienes-nav");
 
-quienesNav.addEventListener("click", event => {
-  event.preventDefault();
-  menu.classList.remove("show-menu");
-  scrollTo(0, document.querySelector("#quienes-somos").offsetTop);
-});
+// quienesNav.addEventListener("click", event => {
+//   event.preventDefault();
+//   menu.classList.remove("show-menu");
+//   scrollTo(0, document.querySelector("#quienes-somos").offsetTop);
+// });
 
 const arriendoNav = document.querySelector(".arriendo-nav");
 
 arriendoNav.addEventListener("click", event => {
   event.preventDefault();
   menu.classList.remove("show-menu");
-  scrollTo(0, document.querySelector("#arriendo-de-maquinarias").offsetTop - 100);
+  scrollTo(0, document.querySelector("#arriendo-de-maquinarias").offsetTop - 50);
 });
 
 const solucionesNav = document.querySelector(".soluciones-nav");
@@ -134,7 +134,7 @@ const solucionesNav = document.querySelector(".soluciones-nav");
 solucionesNav.addEventListener("click", event => {
   event.preventDefault();
   menu.classList.remove("show-menu");
-  scrollTo(0, document.querySelector("#soluciones").offsetTop);
+  scrollTo(0, document.querySelector("#soluciones").offsetTop + 45);
 });
 
 const productosNav = document.querySelector(".productos-nav");
@@ -143,6 +143,14 @@ productosNav.addEventListener("click", event => {
   event.preventDefault();
   menu.classList.remove("show-menu");
   scrollTo(0, document.querySelector("#productos").offsetTop - 100);
+});
+
+const outsourcingNav = document.querySelector(".outsourcing-nav");
+
+outsourcingNav.addEventListener("click", event => {
+  event.preventDefault();
+  menu.classList.remove("show-menu");
+  scrollTo(0, document.querySelector("#outsourcing").offsetTop + 45);
 });
 
 // Enviar formulario maquinarias -----------------------------------

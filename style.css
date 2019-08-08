@@ -217,14 +217,14 @@ header {
   flex-direction: column;
   align-items: center;
   /* padding-top: 145px; */
-  padding-top: 0;
+  padding-top: 85px;
   padding-bottom: 65px;
 }
 
 .maquina-header {
   color: #ecedef;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 75px;
 }
 
 .maquina-subtitulo {
@@ -459,7 +459,7 @@ header {
 .productos-header {
   margin-top: 0;
   margin-bottom: 90px;
-  color: #2f2e2e;
+  color: black;
 }
 
 .productos-container {
